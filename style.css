@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 0 5em;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 75%;
+  height: fit-content;
+  max-width: 870px;
+  min-width: 870px;
+  align-items: flex-start;
+  padding: 4em 0;
+  flex-wrap: wrap;
+}
+header h1 {
+  font-size: 2.2em;
+  font-family: "Pt Serif", sans-serif;
+}
+.team-info {
+  font-family: "Poppins", sans-serif;
+  max-width: 440px;
+  font-size: 1.2em;
+}
+main {
+  width: 100%;
+  max-width: 1000px;
+  min-width: 560px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5em;
+}
+.photo-div {
+  max-width: 234px;
+  min-width: 234px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.photo-div h3 {
+  font-family: "Poppins", sans-serif;
+  margin-top: 5px;
+}
+.photo-div.down {
+  position: relative;
+  top: 4em;
+}
+.photo-div .name {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.photo-div .name p {
+  font-family: "PT Serif";
+  margin: 0.3em;
+  writing-mode: vertical-lr;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: row;
+  column-gap: 0.45em;
+}
+.photo-div .name img {
+  width: 100%;
+}
+footer {
+  margin-top: 5em;
+  padding: 1.4em;
+  font-family: "Montserrat", sans-serif;
+  color: #a9a9a9;
+  display: flex;
+  flex-direction: row;
+  gap: 0.2em;
+  flex-wrap: nowrap;
+  min-width: 303px;
+}
+footer a {
+  color: #a9a9a9;
+}
+@media (max-width: 1022px) {
+  .photo-div.down{
+    top: 0;
+  }
+  .photo-div.third{
+    position: relative;
+    top: 4em;
+  }
+  
+}
+@media (max-width: 900px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    margin-left: -6.5em;
+  }
+  .container {
+    overflow-x: hidden;
+    justify-content: flex-start;
+  }
+  header h1{
+    margin-left: -147px;
+    padding: .5em;
+  }
+  .photo-div.down{
+    top: 0;
+  }
+  .photo-div.third{
+    position: relative;
+    top: 4em;
+  }
+
+}
+@media (max-width: 621px) {
+  main{
+    min-width: 0;
+  }
+  .photo-div.down,.photo-div.third{
+    top: 0  ;
+  }
+  header h1{
+    
+    margin-left: -55px;
+    font-size: 1.75em;
+  }
+  header{
+    margin-left: 0;
+    min-width: 288px;
+  }
+  footer{
+    font-size: .75em;
+  }
+}
